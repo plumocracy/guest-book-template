@@ -1,42 +1,31 @@
-# sv
+Okay here we go!!
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Creating a project
+first things first, install node and npm using your package manager of choice.
+then run `npm i` to install the relavent dependencies.
 
-If you're seeing this, you've probably already done this step. Congrats!
+at this point you can run `npm run dev` in your terminal inside this repo 
+and you should get a local development server running at http://localhost:5173
 
-```sh
-# create a new project
-npx sv create my-app
-```
+when you navigate you can type into that text box and when you click submit you'll be able to see the result 
+in the terminal. Give it a try! 
 
-To recreate this project with the same configuration:
 
-```sh
-# recreate this project
-npx sv@0.16.1 create --template minimal --types ts --add prettier eslint vitest="usages:unit,component" sveltekit-adapter="adapter:cloudflare+cfTarget:workers" drizzle="database:postgresql+postgresql:neon" --install npm guest-book-template
-```
+Now that you have that. Inspect the file src/lib/components/SubmitForm.svelte.
 
-## Developing
+this file contains the code that defines that form. Read it and follow it's instructions.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-```sh
-npm run dev
+After you've done that go to 
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+src/routes/+page.server.ts 
 
-## Building
+this file contains the code that runs on the server when a user submits this form. 
 
-To create a production version of your app:
+read that file and folllow its instructions. after youre finished with that lmk and I'll make some more stuff for you to do.
 
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Google the following:
+SvelteKit components
+HTTP methods
+HTML forms
+Database migrations
